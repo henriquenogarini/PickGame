@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 673px;
+    height: 41px;;
+    margin-left: 703px;
+}
+
+.navbar li {
+    margin-left: 60px;
+}
+
+#divLogo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-right: 200px;
+}
+
+#logo {
+    width: 82px;
+    height: 45px;
+}
+
+.buttonContact {
+    position: relative;
+    display: flex;
+}
+
+.contact {
+    background-color: #FA9021;
+    border-radius: 6px;
+    border: none;
+    width: 131px;
+    height: 41px;
+}
