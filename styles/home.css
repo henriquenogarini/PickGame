@@ -1,15 +1,11 @@
 body {
     background-color: #422F9C;
     background-image: url(/images/joy_stick\ 1.png);
-    background-position: 772px 0px;
+    background-position: 1115px 0px;
     background-repeat: no-repeat;
 }
 
 a {
     color: #fff
-    text-decoration: none;
 }
 
-a:hover {
-    
-}

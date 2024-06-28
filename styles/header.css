@@ -1,43 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor1: white;
+    --poppins: "Poppins", sans-serif;
+}
+
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px 10px;
+    flex: auto;
+    margin-left: 750px;
+    font-size: 16px;
+    height: auto;
 }
 
-.navbar{
+nav > a {
+    padding: 0px 70px;
+    text-decoration: none;
+    font-family: var(--poppins);
+    position: relative;
+}
+
+nav > a::after{
+    content: '';
     position: absolute;
-    display: flex;
-    align-items: center;
-    width: 673px;
-    height: 41px;;
-    margin-left: 703px;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background:#FA9021 ;
+    transition: width 0.3s ease, right 0.3s ease;
 }
 
-.navbar li {
-    margin-left: 60px;
+nav > a:hover::after {
+    width: 50%;
+    left: 0;
 }
 
-#divLogo {
-    position: absolute;
+
+.divNav {
     display: flex;
-    align-items: center;
-    padding-right: 200px;
+    flex-direction: row;
+    padding: 55px 37px;
 }
 
 #logo {
-    width: 82px;
-    height: 45px;
-}
-
-.buttonContact {
-    position: relative;
     display: flex;
+    color: var(--cor1);
+    font-size: 29px;
+    font-family: var(--poppins);
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 .contact {
+    color: white;
     background-color: #FA9021;
     border-radius: 6px;
     border: none;
     width: 131px;
     height: 41px;
+    font-family: var(--poppins);
+    margin-right: 47px;
 }
