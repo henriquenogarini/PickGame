@@ -6,15 +6,15 @@
 }
 
 nav {
-    padding: 10px 10px;
-    flex: auto;
-    margin-left: 750px;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-size: 16px;
     height: auto;
 }
 
 nav > a {
-    padding: 0px 70px;
     text-decoration: none;
     font-family: var(--poppins);
     position: relative;
@@ -37,11 +37,16 @@ nav > a:hover::after {
     left: 0;
 }
 
-
 .divNav {
     display: flex;
     flex-direction: row;
-    padding: 55px 37px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.flexDirection{
+    display: flex;
+    flex-direction: row;
 }
 
 #logo {
@@ -51,6 +56,7 @@ nav > a:hover::after {
     font-family: var(--poppins);
     text-decoration: none;
     font-weight: bolder;
+    margin-left: 30px;
 }
 
 .contact {
