@@ -5,6 +5,10 @@
     --poppins: "Poppins", sans-serif;
 }
 
+a {
+    color: #fff
+}
+
 nav {
     width: 700px;
     display: flex;
@@ -49,7 +53,7 @@ nav > a:hover::after {
     flex-direction: row;
 }
 
-#logo {
+.logo {
     display: flex;
     color: var(--cor1);
     font-size: 29px;

@@ -5,6 +5,10 @@
     --poppins: "Poppins", sans-serif;
 }
 
+a {
+    color: #fff
+}
+
 footer {
     background-color: #070707;
     color: var(--cor1);
