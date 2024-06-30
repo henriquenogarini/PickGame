@@ -51,10 +51,11 @@ footer {
     width: 16%;
 }
 
-.footerContact > h1 {
+.footerContact > h1{
     font-size: 17px;
     font-weight: normal;
 }
+
 
 .footerAbout {
     width: 16%;

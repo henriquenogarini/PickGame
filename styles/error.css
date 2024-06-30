@@ -1,0 +1,30 @@
+:root{
+    --cor1: white;
+    --rubik: "Rubik", sans-serif;
+}
+
+h2,h3{
+    font-size: 40px;
+    text-align: center;
+    color: #E87D0E;
+    font-family: var(--rubik);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#gandalf {
+    width: 100%;
+    text-align: center;
+}
+
+#message {
+    text-align: center;
+    margin-top: 2%;
+}
+
+#message p {
+    color: white;
+    font-size: 25px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
