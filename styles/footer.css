@@ -13,11 +13,12 @@ footer {
     background-color: #070707;
     color: var(--cor1);
     font-family: var(--poppins);
-    position: absolute;
+    position: static;
     display: block;
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 420px;
 }
 
 .copyright {
@@ -30,6 +31,7 @@ footer {
     justify-content: space-evenly;
     font-family: var(--poppins);
     margin: 60px;
+    padding-top: 60px;
 }
 
 .footerLogo {
@@ -72,4 +74,8 @@ footer {
     width: 17%;
     display: flex;
     align-items: flex-end;
+}
+
+.teste{
+    height: 1000px;
 }
