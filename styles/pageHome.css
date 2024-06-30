@@ -54,6 +54,11 @@ h1 {
     border: none;
 }
 
+#detailsButton:hover {
+    background-color: #c8731a;
+    cursor: pointer;
+}
+
 #textTrending {
     overflow: hidden;
     margin-top: 12%;
@@ -80,6 +85,11 @@ h2{
     height: 57px;
     margin-top: 20px;
     margin-left: 47%;
+}
+
+#textTrending button:hover{
+    background-color: #E87D0E;
+    cursor: pointer;
 }
 
 #imagesTrending{

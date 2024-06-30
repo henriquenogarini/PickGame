@@ -74,3 +74,8 @@ nav > a:hover::after {
     font-family: var(--poppins);
     margin-right: 47px;
 }
+
+.contact:hover {
+    background-color: #c8731a;
+    cursor: pointer;
+}
