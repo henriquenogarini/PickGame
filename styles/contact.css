@@ -11,6 +11,11 @@ a{
     text-decoration: none;
 }
 
+span{
+    color: red;
+
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -149,7 +154,7 @@ label {
 }
 
 
-input,textarea{
+#form input,textarea{
     color: var(--cor1);
     font-family: var(--poppins);
 }
@@ -284,3 +289,4 @@ input,textarea{
  #location {
     font-size: 20px;
  }
+

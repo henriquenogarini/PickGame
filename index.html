@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/pageHome.css">
     <link rel="stylesheet" href="./styles/images.css">
-    <script src="/scripts/index.js"></script>
 </head>
 <body>
     <header> 
@@ -124,8 +123,9 @@
                 </div>
                 <div id="moveDiv">
                     <div id="inputButton">
-                        <input type="text" name="email" placeholder="Enter email address">
-                        <button type="submit">Continue</button>
+                        <input type="text" name="email" id="contactEmailPlus" placeholder="Enter email address">
+                        <button type="button" onclick="submitEmaill(event)">Continue</button>
+                        <span hidden id="emailFirst">Invalid Email</span>
                     </div>
                 </div>
             </section>
@@ -145,7 +145,7 @@
                 <p><a href="/contact.html">Contact Us</a></p>
             </div>
             <div class="footerContact">
-                <a href="contact.html"><h1>Contact Us</h1></a>
+                <h1><a href="contact.html">Contact Us</a></h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 <p>+908 89097 890</p>
             </div>
@@ -159,5 +159,6 @@
         <hr>
         <p class="copyright">Copyright * 2022 prodesigner All rights Reserved</p>
     </footer>
+    <script src="/scripts/index.js"></script>
 </body>
 </html>

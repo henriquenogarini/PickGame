@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/contact.css">
-    <script src="/scripts/index.js"></script>
 </head>
 <body>
     <header> 
@@ -62,26 +61,30 @@
                             <p>Lorem Ipsum is simply dummy text of the printing.</p>
                         </div>
                         <div id="form">
-                            <form action="">
+                            <form action="" id="contactForm" name="contactForm">
                                 <div id="fieldRow">
                                     <div>
-                                        <label for="firstName">First Name</label><br>
-                                        <input class="fieldCss" id="firstName" type="text">
+                                        <label id="labelFirst" name="firstName" for="first">First Name</label><br>
+                                        <input class="fieldCss" id="first" name="first" type="text"><br>
+                                        <span hidden id="firstNameSpan" on>No number and special characters</span>
                                     </div>
                                     <div>
-                                        <label for="lastName">Last Name</label><br>
-                                        <input class="fieldCss" id="lastName" type="text">
+                                        <label id="labelLast" name="lastName" for="last">Last Name</label><br>
+                                        <input class="fieldCss" id="last" name="last" type="text"><br>
+                                        <span hidden id="lastNameSpan">No number and special characters</span>
                                      </div>
                                 </div>
                                 <div id="emailLenght">
-                                    <label for="email">Email Adress</label><br>
-                                    <input class="fieldCss" id="email" type="text">
+                                    <label id="labelEmail" name="email" for="email">Email Adress</label><br>
+                                    <input class="fieldCss" id="email" name="email" type="email">
+                                    <span hidden id="emailSpan">Please enter a valid email adress</span>
                                 </div>
                                 <div id="messageInput">
-                                    <label for="message">Message</label><br>
+                                    <label id="labelTextArea" name="textArea" for="message">Message</label><br>
                                     <textarea class="fieldCss" name="message" id="message"></textarea>
+                                    <span hidden id="textAreaSpan">The message must contain a minimum os 10 characters.</span>
                                 </div>
-                                <button id="getRight">Get in touch</button>
+                                <button type="submit" id="getRight">Get in touch</button>
                             </form>
                         </div>
                     </div>
@@ -98,8 +101,9 @@
                 </div>
                 <div id="moveDiv">
                     <div id="inputButton">
-                        <input type="text" name="email" placeholder="Enter email address">
-                        <button type="submit">Continue</button>
+                        <input id="contactUs" type="email" name="emailContact" placeholder="Enter email address">
+                        <button type="button" onclick="submitEmail(event)">Continue</button>
+                        <span hidden id="emailContactUs">Invalid Email</span>
                     </div>
                 </div>
             </section>
@@ -133,5 +137,6 @@
         <hr>
         <p class="copyright">Copyright * 2022 prodesigner All rights Reserved</p>
     </footer>
+    <script src="/scripts/index.js"></script>
 </body>
 </html>
