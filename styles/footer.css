@@ -5,10 +5,6 @@
     --poppins: "Poppins", sans-serif;
 }
 
-a {
-    color: #fff
-}
-
 footer {
     background-color: #070707;
     color: var(--cor1);
@@ -56,7 +52,9 @@ footer {
     font-weight: normal;
 }
 
-
+.footerContact a{
+    text-decoration: none;
+}
 .footerAbout {
     width: 16%;
 }
@@ -75,8 +73,4 @@ footer {
     width: 17%;
     display: flex;
     align-items: flex-end;
-}
-
-.teste{
-    height: 1000px;
 }

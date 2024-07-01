@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --cor1: white;
+    --poppins: "Poppins", sans-serif;
+    --rubik: "Rubik", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#textHead {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#textHead p {
+    font-size: 16px;
+    color: var(--cor1);
+    font-family: var(--poppins);
+}
+
+#textHead p span {
+    color: #E47500;
+}
+
+#textHead h1 {
+    font-size: 33px;
+    color: var(--cor1);
+    font-family: var(--poppins);
+}
+
+#world {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#world img {
+    width: 80%;
+}
+
+#imgForm {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 140vh;
+}
+
+#backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#formContent {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--cor1);
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    z-index: 1;
+}
+
+#textForm {
+    color: var(--cor1);
+    text-align: center;
+}
+
+#textForm h2{
+    font-size: 30px;
+    font-family: var(--poppins);
+    font-weight: normal;
+}
+
+#textForm p{
+    font-size: 13px;
+    font-family: var(--poppins);
+    font-weight: medium;
+    margin-bottom: 40%;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25%;
+    width: 100%;
+}
+
+#fieldRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fieldCss{
+    box-sizing: border-box;
+    width: 322px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 0.6px solid #CECECE;
+    border-radius: 9px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#emailLenght input{
+    width: 100%;
+}
+
+#messageInput textarea {
+    width: 100%;
+    height: 235px;
+    resize: none;
+}
+
+#firstName {
+    margin-right: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #4F4F4F;
+    font-family: var(--poppins);
+    display: block;
+    text-align: left;
+    margin-bottom: -20px;
+}
+
+
+input,textarea{
+    color: var(--cor1);
+    font-family: var(--poppins);
+}
+
+#getRight {
+    font-size: 16px;
+    padding: 10px 20px;
+    background: #E47500;
+    border: none;
+    width: 193px;
+    height: 57px;
+    border-radius: 6px;
+    color: var(--cor1);
+    cursor: pointer;
+    font-family: var(--poppins);
+    margin-left: 71%;
+}
+
+#getRight:hover {
+    background: #d06400;
+    cursor: pointer;
+}
+
+#randomText {
+    margin-top: 5%;
+    margin-left: 12%;
+    width: 30%;
+    font-family: var(--poppins);
+    color: var(--cor1);
+ }
+
+ #randomText h1{
+    font-size: 30px;
+ }
+
+ #randomText p{
+    font-size: 16px;
+ }
+
+ #loop {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color: #1C140F;
+    width: 76%;
+    height: 230px;
+    border-radius: 10px;
+    margin-left: 12%;
+    font-family: var(--poppins);
+    color: var(--cor1);
+    position: relative;
+ }
+ 
+#help1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 5%;
+    padding-top: 50px;
+ }
+
+#help2{
+    font-size: 17px;
+    width: 35%;
+    margin-left: 5%;
+}
+
+ #inputButton {
+    position: relative;
+    width: 400px;
+    bottom: 20px;
+    right: 20px;
+    margin: 20px;
+    padding-bottom: 20px;
+    bottom: 330px;
+ }
+
+ #inputButton input {
+    width: 100%;
+    padding: 20px 40px 20px 20px;
+    font-size: 13px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    float: left;
+ }
+
+ #inputButton button {
+    position: absolute;
+    right: 10px;
+    margin-top: 1%;
+    padding: 15px 10px;
+    font-size: 13px;
+    background-color: #DC7000;
+    color: var(--cor1);
+    font-family: var(--poppins);
+    border: none;
+    border-radius: 8px;
+ }
+
+ #inputButton button:hover {
+    background-color: #c8731a;
+    cursor: pointer;
+ }
+
+ #moveDiv {
+    margin-left: 60%;
+ }
+
+ #contactSection{
+    display: flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 20px;
+ }
+
+ #medias, #phone, #location {
+    text-align: center;
+ }
+
+ #contactSection p {
+    color: var(--cor1);
+    font-family: var(--poppins);
+ }
+
+#followUS{
+    font-size: 16px;
+}
+
+ #telephone {
+    font-size: 20px;
+ }
+
+ #location {
+    font-size: 20px;
+ }
