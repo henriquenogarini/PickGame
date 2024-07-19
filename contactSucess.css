@@ -1,0 +1,44 @@
+:root{
+    --cor1: white;
+    --rubik: "Rubik", sans-serif;
+}
+
+#recieveLocal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} 
+
+#divTeste {
+        border-radius:  8px;
+        background-image: radial-gradient(closest-side,#422F9C, #723172);
+        width: 80%;
+        height: 500px;
+        margin-left: 12%;
+        margin-right: 12%;
+        margin-top: 2%;
+}
+
+#recieveLocal > h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #E87D0E;
+    font-family: var(--rubik);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin-left: 5%;
+}
+
+#pHtml{
+    font-size: 24px;
+    color: #E87D0E;
+    font-family: var(--rubik);
+    text-align: center;
+ }
+
+ #divHtml{
+    text-align: center;
+    color: var(--cor1);
+    font-family: var(--rubik);
+    font-size: 18px;
+ }

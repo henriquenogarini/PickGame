@@ -13,7 +13,6 @@ a{
 
 span{
     color: red;
-
 }
 
 body {
@@ -120,7 +119,7 @@ body {
 
 .fieldCss{
     box-sizing: border-box;
-    width: 322px;
+    width: 300px;
     height: 56px;
     background: rgba(255, 255, 255, 0.07);
     border: 0.6px solid #CECECE;
@@ -263,15 +262,21 @@ label {
 
  #contactSection{
     display: flex;
-    flex: wrap;
+    /* flex: wrap; */
     justify-content: space-evenly;
     position: relative;
     padding: 20px;
  }
 
- #medias, #phone, #location {
-    text-align: center;
+#phone, #location {
+    display: flex;
+    align-items: center;
+
  }
+
+#phone img, #location img{
+    margin-right: 30px;
+}
 
  #contactSection p {
     color: var(--cor1);
@@ -282,6 +287,10 @@ label {
     font-size: 16px;
 }
 
+#divFollowUs{
+    margin-left: 15px;
+}
+
  #telephone {
     font-size: 20px;
  }
@@ -290,3 +299,24 @@ label {
     font-size: 20px;
  }
 
+ #spanEmail {
+    color: red;
+    margin-top: 60px;
+    margin-left: 5px;
+ }
+
+ .divide {
+    border: 1px solid white;
+ }
+
+ #colorDegrade {
+    background-image: linear-gradient(#422F9C, #1C140F)
+ }
+
+ #last {
+    margin-left: 40px;
+ }
+
+ #labelLast{
+    margin-left: 40px;
+ }

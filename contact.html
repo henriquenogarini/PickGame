@@ -36,19 +36,23 @@
             </div>
             <div id="contactSection">
                 <div id="medias">
-                    <p id="followUs">Follow us</p>
-                    <a href="https://www.facebook.com"><img src="./images/facebookBlack.png" alt="Facebook" width="70" height="70"></a>
-                    <a href="https://www.instagram.com"><img src="./images/instagramBlack.png" alt="Facebook" width="70" height="70"></a>
-                    <a href="https://x.com"><img src="./images/twitterBlack.png" alt="Facebook" width="70" height="70"></a>
-                    <a href="https://www.linkedin.com"><img src="./images/linkedinBlack.png" alt="Facebook" width="70" height="70"></a>
+                    <div id="divFollowUs">
+                        <p id="followUs">Follow us</p>
+                    </div>
+                    <a href="https://www.facebook.com"><img src="./images/facebookBlack.png" alt="Facebook" width="60" height="60"></a>
+                    <a href="https://www.instagram.com"><img src="./images/instagramBlack.png" alt="Facebook" width="60" height="60"></a>
+                    <a href="https://x.com"><img src="./images/twitterBlack.png" alt="Facebook" width="60" height="60"></a>
+                    <a href="https://www.linkedin.com"><img src="./images/linkedinBlack.png" alt="Facebook" width="60" height="60"></a>
                 </div>
+                <div class="divide"></div>
                 <div id="phone">
-                    <img src="./images/phone.png" alt="Telephone">
+                    <img src="./images/phone.png" alt="Telephone" width="50" height="50">
                     <p id="telephone">+94 4444 5555 6</p>
                 </div>
+                <div class="divide"></div>
                 <div id="location">
-                    <img src="./images/location.png" alt="Location">
-                    <p id="gps">but also the leap into electronic typesetting</p>
+                    <img src="./images/location.png" alt="Location" width="50" height="50">
+                    <p id="gps">but also the leap into electronic <br> typesetting</p>
                 </div>
             </div>
         </section>
@@ -90,7 +94,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="colorDegrade">
                 <div id="randomText">
                     <h1>Lorem Ipsum</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -103,7 +107,9 @@
                     <div id="inputButton">
                         <input id="contactUs" type="email" name="emailContact" placeholder="Enter email address">
                         <button type="button" onclick="submitEmail(event)">Continue</button>
-                        <span hidden id="emailContactUs">Invalid Email</span>
+                        <div id="spanEmail">
+                            <span hidden id="emailContactUs">Invalid Email</span>
+                        </div>
                     </div>
                 </div>
             </section>

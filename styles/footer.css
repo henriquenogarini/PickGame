@@ -26,7 +26,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     font-family: var(--poppins);
-    margin: 60px;
+    margin: 40px;
     padding-top: 60px;
 }
 

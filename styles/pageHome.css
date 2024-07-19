@@ -345,3 +345,9 @@ h2{
  #moveDiv {
     margin-left: 60%;
  }
+
+ #spanEmail {
+    color: red;
+    margin-top: 60px;
+    margin-left: 5px;
+ }

@@ -14,7 +14,20 @@ function saveLocal(name,dado){
 }
 
 function getLocal(name){
-    return localStorage.getItem(name)
+    return document.getElementById('divTeste').innerHTML += '<p id="pHtml">'+ name.charAt(0).toUpperCase() + name.slice(1) +':</p><div id="divHtml">' + localStorage.getItem(name) + '</div><br>';
+}
+
+function get_value(){
+    let list = ["firstName","lastName","email","message" ]
+    list.forEach(el => {
+        getLocal(el)
+    })
+    
+    document.getElementById('divTeste').innerHTML += firstNameHtml;
+    }
+
+window.onload = function() {
+    get_value()
 }
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
@@ -50,6 +63,7 @@ function submitEmail(event){
     const emailRegex= /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+|\.([a-z]+)?$/i
     let validateEmailContact = validateRegex(emailValidate, emailRegex, 'emailContactUs')
     if(validateEmailContact){
+        saveLocal("emailValidate",emailValidate)
         alert("Email successfully submitted!");
     }
 }
@@ -60,6 +74,7 @@ function submitEmaill(event){
     const emailRegex= /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+|\.([a-z]+)?$/i
     let validateEmailContact = validateRegex(emailValidate, emailRegex, 'emailFirst')
     if(validateEmailContact){
+        saveLocal("emailValidate02",emailValidate)
         alert("Email successfully submitted!");
     }
 }
