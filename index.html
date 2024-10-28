@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pick Game</title>
-    <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/background.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/pageHome.css">
     <link rel="stylesheet" href="./styles/images.css">
+    <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body>
     <header> 
@@ -89,8 +90,41 @@
                 <img id="backgroundStudio" src="/images/Home/MarketsTypes/fundo.webp" alt="Studio">
                 <div id="plataformsText">
                     <h1>Exploring the Different Types of Game Developers and Their Markets</h1>
-                    <p>There are various types of game developers catering to distinct markets, including mobile, console, and PC. Some specialize in 2D or 3D games, while others focus on immersive VR experiences. Each sector requires unique skills and creativity to engage diverse audiences.</p>
-                    <img id="plataformsImg" src="./images/plataforms.png" alt="Game Plataforms Supported">
+                    <p class="plataformP">There are various types of game developers catering to distinct markets, including mobile, console, and PC. Some specialize in 2D or 3D games, while others focus on immersive VR experiences. Each sector requires unique skills and creativity to engage diverse audiences.</p>
+                    <div class="firstDevelop">
+                        <div>
+                            <img id="imageDev" src="./images/Home/GameDevelops/mobile.png" alt="Game Plataforms Supported">
+                            <p>Mobile Game Development</p>
+                            <img id="arrowImage" src="images/Home/GameDevelops/arrow.png" alt="Click Here">
+                        </div>
+                        <div>
+                            <img id="imageDev" src="./images/Home/GameDevelops/pc.png" alt="Game Plataforms Supported">
+                            <p>PC Game Development</p>
+                            <img id="arrowImage" src="images/Home/GameDevelops/arrow.png" alt="Click Here">
+                        </div>
+                        <div>
+                            <img id="imageDev" src="./images/Home/GameDevelops/console.png" alt="Game Plataforms Supported">
+                            <p>Console Game Development</p>
+                            <img id="arrowImage" src="images/Home/GameDevelops/arrow.png" alt="Click Here">
+                        </div>
+                        <div>
+                            <img id="imageDev" src="./images/Home/GameDevelops/vr.png" alt="Game Plataforms Supported">
+                            <p>VR/AR Game Development</p>
+                            <img id="arrowImage" src="images/Home/GameDevelops/arrow.png" alt="Click Here">
+                        </div>
+                    </div>
+                    <div class="secondDevelop">
+                        <div>
+                            <img id="imageDev" src="./images/Home/GameDevelops/2d.png" alt="Game Plataforms Supported">
+                            <p>2D Assets</p>
+                            <img id="arrowImage" src="images/Home/GameDevelops/arrow.png" alt="Click Here">
+                        </div>
+                        <div>
+                            <img id="imageDev" src="./images/Home/GameDevelops/3d.png" alt="Game Plataforms Supported">
+                            <p>3D Modelings</p>
+                            <img id="arrowImage" src="images/Home/GameDevelops/arrow.png" alt="Click Here">
+                        </div>
+                    </div>
                 </div>
             </div>
             </section>
@@ -124,10 +158,10 @@
                 </div>
                 <div id="moveDiv">
                     <div id="inputButton">
-                        <input type="text" name="email" id="contactEmailPlus" placeholder="Enter email address">
-                        <button type="button" onclick="submitEmaill(event)">Continue</button>
+                        <input id="contactUs" type="email" name="emailContact" placeholder="Enter email address">
+                        <button type="button" onclick="submitEmail(event)">Continue</button>
                         <div id="spanEmail">
-                            <span hidden id="emailFirst">Invalid Email</span>
+                            <span hidden id="emailContactUs">Invalid Email</span>
                         </div>
                     </div>
                 </div>

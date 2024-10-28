@@ -19,7 +19,7 @@
     position: relative;
     z-index: 1;
     margin-top: 12%;
-    width: 1422px; /* Mantém o tamanho original */
+    width: 1320px; /* Mantém o tamanho original */
     height: 462px; /* Mantém o tamanho original */
 }
 
@@ -52,6 +52,16 @@
 #project06 {
     width: 600px; /* Mantém o tamanho original */
     height: 270px; /* Mantém o tamanho original */
+}
+
+#imageDev{
+    width: 65px !important;
+    height: 65px !important;
+}
+
+#arrowImage{
+    width: 21px !important;
+    height: 21px !important;
 }
 
 /* Media Queries para responsividade */
