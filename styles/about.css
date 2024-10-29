@@ -7,6 +7,12 @@
     --rubik: "Rubik", sans-serif;
 }
 
+body {
+    background-image: linear-gradient(#422F9C, #1C140F);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -64,39 +70,105 @@ p{
     font-size: 16px;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .imageAbout div {
-        width: 75%;
-        height: auto;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-    }
 
+@media screen and (max-width: 1400px) {
+    .imageAbout div {
+        width: 550px;
+        left: 8%;
+    }
+    
     .pickGameBig {
-        display: none;
+        margin-left: 48%;
+        width: 45%;
     }
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 32px;
+@media screen and (max-width: 1200px) {
+    .imageAbout div {
+        width: 500px;
+        left: 5%;
     }
+    
+    .pickGameBig {
+        margin-left: 50%;
+        width: 42%;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+}
 
+@media screen and (max-width: 992px) {
+    .imageAbout div {
+        width: 45%;
+        height: auto;
+        top: 15%;
+    }
+    
+    .pickGameBig {
+        margin-left: 52%;
+        width: 40%;
+    }
+    
     h2 {
         font-size: 32px;
     }
+}
 
+@media screen and (max-width: 768px) {
+    .imageAbout {
+        min-height: 400px;
+    }
+    
+    .imageAbout div {
+        width: 90%;
+        left: 5%;
+        top: 10%;
+    }
+    
+    .pickGameBig {
+        top: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 60%;
+    }
+    
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
     p {
-        font-size: 14px;
+        text-align: center;
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 576px) {
+    .imageAbout {
+        min-height: 350px;
+    }
+    
     .imageAbout div {
-        width: 90%;
+        top: 5%;
+    }
+    
+    .pickGameBig {
+        top: 55%;
+        width: 80%;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 14px;
     }
 }
