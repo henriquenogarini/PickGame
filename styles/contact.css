@@ -52,6 +52,8 @@ body {
 
 #world img {
     width: 80%;
+    max-width: 1200px;
+    height: auto;
 }
 
 #imgForm {
@@ -89,6 +91,7 @@ body {
 }
 
 #textForm h2{
+    margin-top: 15%;
     font-size: 30px;
     font-family: var(--poppins);
     font-weight: normal;
@@ -152,7 +155,6 @@ label {
     margin-bottom: -20px;
 }
 
-
 #form input,textarea{
     color: var(--cor1);
     font-family: var(--poppins);
@@ -183,17 +185,17 @@ label {
     width: 30%;
     font-family: var(--poppins);
     color: var(--cor1);
- }
+}
 
- #randomText h1{
+#randomText h1{
     font-size: 30px;
- }
+}
 
- #randomText p{
+#randomText p{
     font-size: 16px;
- }
+}
 
- #loop {
+#loop {
     margin-top: 5%;
     margin-bottom: 10%;
     background-color: #1C140F;
@@ -204,14 +206,14 @@ label {
     font-family: var(--poppins);
     color: var(--cor1);
     position: relative;
- }
- 
+}
+
 #help1{
     font-size: 30px;
     font-weight: 500;
     margin-left: 5%;
     padding-top: 50px;
- }
+}
 
 #help2{
     font-size: 17px;
@@ -219,7 +221,7 @@ label {
     margin-left: 5%;
 }
 
- #inputButton {
+#inputButton {
     position: relative;
     width: 400px;
     bottom: 20px;
@@ -227,18 +229,18 @@ label {
     margin: 20px;
     padding-bottom: 20px;
     bottom: 330px;
- }
+}
 
- #inputButton input {
+#inputButton input {
     width: 100%;
     padding: 20px 40px 20px 20px;
     font-size: 13px;
     border-radius: 8px;
     box-sizing: border-box;
     float: left;
- }
+}
 
- #inputButton button {
+#inputButton button {
     position: absolute;
     right: 10px;
     margin-top: 1%;
@@ -249,39 +251,37 @@ label {
     font-family: var(--poppins);
     border: none;
     border-radius: 8px;
- }
+}
 
- #inputButton button:hover {
+#inputButton button:hover {
     background-color: #c8731a;
     cursor: pointer;
- }
+}
 
- #moveDiv {
+#moveDiv {
     margin-left: 60%;
- }
+}
 
- #contactSection{
+#contactSection{
     display: flex;
-    /* flex: wrap; */
     justify-content: space-evenly;
     position: relative;
     padding: 20px;
- }
+}
 
 #phone, #location {
     display: flex;
     align-items: center;
-
- }
+}
 
 #phone img, #location img{
     margin-right: 30px;
 }
 
- #contactSection p {
+#contactSection p {
     color: var(--cor1);
     font-family: var(--poppins);
- }
+}
 
 #followUS{
     font-size: 16px;
@@ -291,32 +291,147 @@ label {
     margin-left: 15px;
 }
 
- #telephone {
+#telephone {
     font-size: 20px;
- }
+}
 
- #location {
+#location {
     font-size: 20px;
- }
+}
 
- #spanEmail {
+#spanEmail {
     color: red;
     margin-top: 60px;
     margin-left: 5px;
- }
+}
 
- .divide {
+.divide {
     border: 1px solid white;
- }
+}
 
- #colorDegrade {
+#colorDegrade {
     background-image: linear-gradient(#422F9C, #1C140F)
- }
+}
 
- #last {
+#last {
     margin-left: 40px;
- }
+}
 
- #labelLast{
+#labelLast{
     margin-left: 40px;
- }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    #moveDiv {
+        margin-left: 50%;
+    }
+    
+    #randomText {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #fieldRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fieldCss {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #last {
+        margin-left: 0;
+    }
+
+    #labelLast {
+        margin-left: 0;
+    }
+
+    #getRight {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #contactSection {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .divide {
+        width: 80%;
+        height: 1px;
+        margin: 10px 0;
+    }
+
+    #moveDiv {
+        margin-left: 0;
+    }
+
+    #inputButton {
+        position: static;
+        margin: 20px auto;
+        bottom: 0;
+    }
+
+    #loop {
+        height: auto;
+        padding: 20px;
+    }
+
+    #help2 {
+        width: 80%;
+    }
+
+    #randomText {
+        width: 76%;
+        margin: 5% 12%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #world img {
+        width: 95%;
+    }
+
+    #formContent {
+        width: 90%;
+    }
+
+    #inputButton {
+        width: 90%;
+    }
+
+    #inputButton button {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #loop {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #help1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #help2 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #phone img, #location img {
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+}

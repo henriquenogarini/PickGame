@@ -11,47 +11,48 @@
     position: absolute;
     z-index: -1;
     margin-left: 58%;
-    width: 196px; 
-    height: 154px;
+    width: 20%;
+    max-width: 196px;
+    height: auto;
 }
 
 #imageffxvi {
     position: relative;
     z-index: 1;
     margin-top: 12%;
-    width: 1320px; /* Mantém o tamanho original */
-    height: 462px; /* Mantém o tamanho original */
+    width: 1320px;
+    height: 462px;
 }
 
-/* Estilos para projetos individuais */
+
 #project01 {
-    width: 457px; /* Mantém o tamanho original */
+    width: 457px;
     height: auto;
 }
 
 #project02 {
-    width: 457px; /* Mantém o tamanho original */
+    width: 457px;
     height: auto;
 }
 
 #project03 {
-    width: 427px; /* Mantém o tamanho original */
+    width: 427px;
     height: auto;
 }
 
 #project04 {
-    width: 246px; /* Mantém o tamanho original */
-    height: 270px; /* Mantém o tamanho original */
+    width: 246px;
+    height: 270px;
 }
 
 #project05 {
-    width: 520px; /* Mantém o tamanho original */
-    height: 270px; /* Mantém o tamanho original */
+    width: 520px;
+    height: 270px;
 }
 
 #project06 {
-    width: 600px; /* Mantém o tamanho original */
-    height: 270px; /* Mantém o tamanho original */
+    width: 600px;
+    height: 270px;
 }
 
 #imageDev{
@@ -64,57 +65,58 @@
     height: 21px !important;
 }
 
-/* Media Queries para responsividade */
+
 @media (max-width: 768px) {
     #imageffxvi {
-        width: 100%; /* Ajusta para 100% da largura do contêiner */
-        height: auto; /* Altura automática para manter proporções */
+        width: 100%;
+        height: auto;
     }
 
     #project01 {
-        width: 90%; /* Ajusta para 90% da largura do contêiner */
-        max-width: 457px; /* Limita a largura máxima */
-        margin: 10px auto; /* Centraliza e adiciona espaçamento */
-        height: auto; /* Altura automática */
+        width: 90%;
+        max-width: 457px;
+        margin: 10px auto;
+        height: auto;
     }
 
     #project02 {
-        width: 90%; /* Ajusta para 90% da largura do contêiner */
-        max-width: 457px; /* Limita a largura máxima */
-        margin: 10px auto; /* Centraliza e adiciona espaçamento */
-        height: auto; /* Altura automática */
+        width: 90%;
+        max-width: 457px;
+        margin: 10px auto;
+        height: auto;
     }
 
     #project03 {
-        width: 90%; /* Ajusta para 90% da largura do contêiner */
-        max-width: 427px; /* Limita a largura máxima */
-        margin: 10px auto; /* Centraliza e adiciona espaçamento */
-        height: auto; /* Altura automática */
+        width: 90%;
+        max-width: 427px;
+        margin: 10px auto;
+        height: auto;
     }
 
     #project04 {
-        width: 90%; /* Ajusta para 90% da largura do contêiner */
-        max-width: 246px; /* Limita a largura máxima */
-        margin: 10px auto; /* Centraliza e adiciona espaçamento */
-        height: auto; /* Altura automática */
+        width: 90%;
+        max-width: 246px;
+        margin: 10px auto;
+        height: auto;
     }
 
     #project05 {
-        width: 90%; /* Ajusta para 90% da largura do contêiner */
-        max-width: 520px; /* Limita a largura máxima */
-        margin: 10px auto; /* Centraliza e adiciona espaçamento */
-        height: auto; /* Altura automática */
+        width: 90%;
+        max-width: 520px;
+        margin: 10px auto;
+        height: auto;
     }
 
     #project06 {
-        width: 90%; /* Ajusta para 90% da largura do contêiner */
-        max-width: 469px; /* Limita a largura máxima */
-        margin: 10px auto; /* Centraliza e adiciona espaçamento */
-        height: auto; /* Altura automática */
+        width: 90%;
+        max-width: 469px;
+        margin: 10px auto;
+        height: auto;
     }
 
     #points {
-        margin-left: 0; /* Ajusta a margem para telas pequenas */
-        width: 100%; /* Ajusta a largura para 100% */
+        width: 30%;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }

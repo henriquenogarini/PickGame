@@ -326,3 +326,170 @@ h2 {
 #randomText h1 {
     font-size: 30px;
 }
+
+/* Media Queries for Smaller Screens */
+@media screen and (max-width: 1366px) {
+    /* Content 01 Section */
+    #content01 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #texts1 {
+        margin: 3% 5%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #texts1 h1 {
+        font-size: 36px;
+        width: 90%;
+    }
+
+    #p2 {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #engines {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .ubisoft, .fromsoftware, .capcom, .nintendo {
+        margin: 10px;
+    }
+
+    /* Trending Section */
+    #textTrending {
+        margin: 12% 5%;
+    }
+
+    #textTrending h2 {
+        font-size: 24px;
+    }
+
+    #textTrending button {
+        margin-left: 20px;
+        position: relative;
+        float: right;
+    }
+
+    #imagesTrending {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 2% 5%;
+        width: 90%;
+    }
+
+    .followers p {
+        font-size: 18px;
+    }
+
+    /* Simple Text Section */
+    #simpleText {
+        margin: 5% 10%;
+        font-size: 24px;
+    }
+
+    /* Spider Man Section */
+    #spiderMan {
+        margin: 0 10%;
+        text-align: center;
+    }
+
+    #spiderMan > h3 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    /* Studio Section */
+    #studio {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    #plataformsText h1 {
+        width: 90%;
+        margin: 150px auto 0;
+        font-size: 24px;
+    }
+
+    .plataformP {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .firstDevelop, .secondDevelop {
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    /* Projects Section */
+    .imagesProjects {
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+    }
+
+    #projects p {
+        width: 80%;
+    }
+
+    #seeAll {
+        margin-top: 30px;
+    }
+
+    /* Random Text Section */
+    #randomText {
+        width: 80%;
+        text-align: center;
+        margin: 5% auto;
+    }
+
+    /* Subscribe Section */
+    #loop {
+        text-align: center;
+    }
+
+    #inputButton {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 768px) {
+    #texts1 h1 {
+        font-size: 28px;
+    }
+
+    .ubisoft, .fromsoftware, .capcom, .nintendo {
+        width: 80%;
+        height: auto;
+    }
+
+    #textTrending {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #textTrending button {
+        float: none;
+        margin: 20px 0;
+    }
+
+    .trendingGame {
+        width: 100%;
+        height: auto;
+    }
+
+    #spiderMan > h3 {
+        font-size: 20px;
+    }
+}

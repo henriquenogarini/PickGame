@@ -14,7 +14,8 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 420px;
+    height: auto;
+    min-height: 420px;
 }
 
 .logoFooter {
@@ -60,7 +61,9 @@ footer {
 
 .footerContact a{
     text-decoration: none;
+    color: var(--cor1);
 }
+
 .footerAbout {
     width: 16%;
 }
@@ -73,6 +76,7 @@ footer {
 .footerAbout > p > a {
     font-size: 16px;
     text-decoration: none;
+    color: var(--cor1);
 }
 
 .footerMedias {
@@ -80,3 +84,145 @@ footer {
     display: flex;
     align-items: flex-end;
 }
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+    .footerSection {
+        margin: 20px;
+        padding-top: 40px;
+    }
+
+    .footerLogo {
+        margin-right: 60px;
+    }
+
+    .footerMedias img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footerContact > h1,
+    .footerAbout h1 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footerSection {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footerLogo {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footerAbout,
+    .footerContact {
+        width: 40%;
+        text-align: center;
+    }
+
+    .footerMedias {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .footerMedias img {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 20px 0;
+    }
+
+    .footerSection {
+        margin: 10px;
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLogo,
+    .footerAbout,
+    .footerContact {
+        width: 90%;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+
+    .logoFooter {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .footerContact > h1,
+    .footerAbout h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footerLogo > p,
+    .footerContact > p,
+    .footerAbout > p > a {
+        font-size: 14px;
+    }
+
+    .footerMedias {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .footerMedias img {
+        width: 40px;
+        height: 40px;
+    }
+
+    hr {
+        margin: 20px 5%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footerSection {
+        margin: 5px;
+    }
+
+    .footerLogo,
+    .footerAbout,
+    .footerContact {
+        width: 95%;
+    }
+
+    .footerContact > h1,
+    .footerAbout h1 {
+        font-size: 16px;
+    }
+
+    .footerLogo > p,
+    .footerContact > p,
+    .footerAbout > p > a {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .footerMedias img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        margin: 20px 10px;
+    }
+}
+

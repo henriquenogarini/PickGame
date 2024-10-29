@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --cor1: white;
+    --poppins: "Poppins", sans-serif;
+    --rubik: "Rubik", sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--cor1);
+    font-size: 40px;
+    font-family: var(--poppins);
+    margin-bottom: 2%;
+}
+
+.imageAbout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: -3;
+}
+
+.imageAbout img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.imageAbout div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 597px;
+    height: 374px;
+    left: 10%;
+    color: var(--cor1);
+    top: 20%;
+    z-index: 3;
+}
+
+.pickGameBig {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 45%;
+    z-index: 3;
+}
+
+.pickGameBig img {
+    width: 100%;
+    height: auto;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p{
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .imageAbout div {
+        width: 75%;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .pickGameBig {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imageAbout div {
+        width: 90%;
+    }
+}
