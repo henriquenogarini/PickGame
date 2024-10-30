@@ -15,6 +15,7 @@ body {
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 span{
@@ -30,7 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 #textHead p {
@@ -169,21 +170,20 @@ label {
 #getRight {
     font-size: 16px;
     padding: 10px 20px;
-    background: #E47500;
+    background: gray;
     border: none;
     width: 193px;
     height: 57px;
     border-radius: 6px;
     color: var(--cor1);
-    cursor: pointer;
     font-family: var(--poppins);
     margin-left: 71%;
 }
 
-#getRight:hover {
+/* #getRight:hover {
     background: #d06400;
     cursor: pointer;
-}
+} */
 
 #randomText {
     margin-top: 5%;

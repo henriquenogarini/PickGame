@@ -144,6 +144,18 @@ h2 {
     width: 76%;
     justify-content: space-between;
     margin: 2% 12%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+#imagesTrending  :hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+#emailContactUsValid{
+    color: rgb(16, 175, 16);
 }
 
 .followers {
@@ -240,8 +252,14 @@ h2 {
 .imagesProjects img {
     overflow: hidden;
     width: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
 }
 
+.imagesProjects :hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 .centeredImages {
     display: flex;
     flex-direction: column;
@@ -297,6 +315,13 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.firstDevelop :hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .secondDevelop{
@@ -305,6 +330,13 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.secondDevelop :hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #textDev1{
@@ -325,6 +357,12 @@ h2 {
 
 #randomText h1 {
     font-size: 30px;
+}
+
+.joystick{
+    position: absolute;
+    right: 3%;
+    z-index: -3;
 }
 
 /* Media Queries for Smaller Screens */

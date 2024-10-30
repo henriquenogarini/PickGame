@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="./images/logoPickGame.png">
     <title>Pick Game</title>
     <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/background.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/pageHome.css">
     <link rel="stylesheet" href="./styles/images.css">
     <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body>
+    <img class="joystick" src="./images/joy_stick 1.png" alt="joystick">
     <header> 
         <div class="divNav">
             <a href="/index.html"><img src="/images/logoPickGame.png" class="logo" href="index.html" alt="PickGameLogo"></img></a>
             <nav class="flexDirection"> 
                 <a class="hoverA" href="index.html">Home</a>
-                <a class="hoverA" href="error404.html">About Us</a>
+                <a class="hoverA" href="about.html">About Us</a>
                 <a class="hoverA" href="error404.html">Portfolio</a>
                 <a class="hoverA" href="error404.html">News</a>
                 <a href="contact.html"><button class="contact" type="button">Contact Us</button></a>
@@ -162,6 +163,7 @@
                         <button type="button" onclick="submitEmail(event)">Continue</button>
                         <div id="spanEmail">
                             <span hidden id="emailContactUs">Invalid Email</span>
+                            <span hidden id="emailContactUsValid">Email successfully submitted!</span>
                         </div>
                     </div>
                 </div>
@@ -175,7 +177,7 @@
                 <p>@PickGame</p>
             </div>
             <div class="footerAbout">
-                <h1>About Us</h1>
+                <a href="about.html"><h1>About Us</h1></a>
                 <p><a href="/error404.html">Zeux</a></p>
                 <p><a href="/error404.html">Portfolio</a></p>
                 <p><a href="/error404.html">Careers</a></p>

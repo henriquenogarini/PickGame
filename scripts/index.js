@@ -57,6 +57,26 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     }
 })
 
+function checkFormCompleted(){
+    const checkFirsName = document.getElementById('first').value.trim()
+    const checkLastName = document.getElementById('last').value.trim()
+    const checkEmail = document.getElementById('email').value.trim()
+    const checkMessage = document.getElementById('message').value.trim()
+    const buttonCheck = document.getElementById('getRight')
+
+    if(checkFirsName && checkLastName && checkEmail && checkMessage){
+        buttonCheck.style.backgroundColor = '#E47500'
+        buttonCheck.style.cursor = 'pointer'
+        buttonCheck.removeAttribute('disabled')
+    }else{
+        buttonCheck.style.backgroundColor = 'gray'
+        buttonCheck.setAttribute('disabled', '')
+    }
+    
+
+}
+
+
 function submitEmail(event){
     event.preventDefault()
     let emailValidate = document.getElementById('contactUs').value.trim()
@@ -64,7 +84,8 @@ function submitEmail(event){
     let validateEmailContact = validateRegex(emailValidate, emailRegex, 'emailContactUs')
     if(validateEmailContact){
         saveLocal("emailValidate",emailValidate)
-        alert("Email successfully submitted!");
+        document.getElementById('emailContactUsValid').style.display = 'inline'
+        document.getElementById('contactUs').value = ''
     }
 }
 
@@ -75,6 +96,7 @@ function submitEmaill(event){
     let validateEmailContact = validateRegex(emailValidate, emailRegex, 'emailFirst')
     if(validateEmailContact){
         saveLocal("emailValidate02",emailValidate)
-        alert("Email successfully submitted!");
+        document.getElementById('emailContactUsValid').style.display = 'inline'
+        document.getElementById('contactUs').value = ''
     }
 }

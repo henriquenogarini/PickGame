@@ -20,7 +20,7 @@
     position: relative;
     z-index: 1;
     margin-top: 12%;
-    width: 1320px;
+    width: 1400px;
     height: 462px;
 }
 
@@ -59,6 +59,7 @@
     width: 65px !important;
     height: 65px !important;
 }
+
 
 #arrowImage{
     width: 21px !important;

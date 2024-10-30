@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="./images/logoPickGame.png">
     <title>Contact Us</title>
     <link rel="stylesheet" href="/styles/background.css">
     <link rel="stylesheet" href="/styles/header.css">
@@ -15,7 +16,7 @@
             <a href="/index.html"><img src="/images/logoPickGame.png" class="logo" href="index.html" alt="PickGameLogo"></img></a>
             <nav class="flexDirection"> 
                 <a class="hoverA" href="index.html">Home</a>
-                <a class="hoverA" href="error404.html">About Us</a>
+                <a class="hoverA" href="about.html">About Us</a>
                 <a class="hoverA" href="error404.html">Portfolio</a>
                 <a class="hoverA" href="error404.html">News</a>
                 <a href="contact.html"><button class="contact" type="button">Contact Us</button></a>
@@ -26,8 +27,8 @@
         <section>
             <div id="textHead">
                 <p>Home >  <span>Contact Us</span></p>
-                <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <h1>Feel free to reach out to us with any questions</h1>
+                <p>We have many central offices worldwide that can help you anytime, anywhere.</p>
             </div>
             <div id="world">
                 <img src="./images/world.png" alt="The World">
@@ -60,33 +61,33 @@
                     <div id="formContent">
                         <div id="textForm">
                             <h2>Say hello</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                            <p>Please fill out the form below and submit it to us!</p>
                         </div>
                         <div id="form">
                             <form action="" id="contactForm" name="contactForm">
                                 <div id="fieldRow">
                                     <div>
                                         <label id="labelFirst" name="firstName" for="first">First Name</label><br>
-                                        <input class="fieldCss" id="first" name="first" type="text"><br>
+                                        <input class="fieldCss" id="first" name="first" type="text" onchange="checkFormCompleted()"><br>
                                         <span hidden id="firstNameSpan" on>No number and special characters</span>
                                     </div>
                                     <div>
                                         <label id="labelLast" name="lastName" for="last">Last Name</label><br>
-                                        <input class="fieldCss" id="last" name="last" type="text"><br>
+                                        <input class="fieldCss" id="last" name="last" type="text" onchange="checkFormCompleted()"><br>
                                         <span hidden id="lastNameSpan">No number and special characters</span>
                                      </div>
                                 </div>
                                 <div id="emailLenght">
                                     <label id="labelEmail" name="email" for="email">Email Adress</label><br>
-                                    <input class="fieldCss" id="email" name="email" type="email">
+                                    <input class="fieldCss" id="email" name="email" type="text" onchange="checkFormCompleted()">
                                     <span hidden id="emailSpan">Please enter a valid email adress</span>
                                 </div>
                                 <div id="messageInput">
                                     <label id="labelTextArea" name="textArea" for="message">Message</label><br>
-                                    <textarea class="fieldCss" name="message" id="message"></textarea>
+                                    <textarea class="fieldCss" name="message" id="message" onchange="checkFormCompleted()"></textarea>
                                     <span hidden id="textAreaSpan">The message must contain a minimum os 10 characters.</span>
                                 </div>
-                                <button type="submit" id="getRight">Get in touch</button>
+                                <button disabled type="submit" id="getRight">Get in touch</button>
                             </form>
                         </div>
                     </div>
@@ -94,8 +95,8 @@
             </section>
             <section>
                 <div id="randomText">
-                    <h1>Lorem Ipsum</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h1>The gaming market is very interesting.</h1>
+                    <p>It's essential to stay updated with the latest trends and news in the gaming industry for success and growth.</p>
                 </div>
                 <div id="loop">
                     <h1 id="help1">Stay in the loop</h1>
@@ -116,19 +117,19 @@
         <section class="footerSection">
             <div class="footerLogo">
                 <a href="index.html"><img class="logoFooter" src="/images/logoPickGame.png" alt="logoPickGame"></a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p>@Logo</p>
+                <p>We deliver the latest gaming news to keep players informed and engaged.</p>
+                <p>@PickGame</p>
             </div>
             <div class="footerAbout">
-                <h1>About Us</h1>
-                <p><a href="">Zeux</a></p>
-                <p><a href="">Portfolio</a></p>
-                <p><a href="">Careers</a></p>
-                <p><a href="">Contact Us</a></p>
+                <a href="about.html"><h1>About Us</h1></a>
+                <p><a href="/error404.html">Zeux</a></p>
+                <p><a href="/error404.html">Portfolio</a></p>
+                <p><a href="/error404.html">Careers</a></p>
+                <p><a href="/contact.html">Contact Us</a></p>
             </div>
             <div class="footerContact">
-                <a href="contact.html"><h1>Contact Us</h1></a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <h1><a href="contact.html">Contact Us</a></h1>
+                <p>For inquiries or support, please feel free to reach out to us anytime. We’re here to help you!</p>
                 <p>+908 89097 890</p>
             </div>
             <div class="footerMedias">

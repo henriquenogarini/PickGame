@@ -3,6 +3,17 @@
     --rubik: "Rubik", sans-serif;
 }
 
+body {
+    background-image: linear-gradient(#422F9C, #1C140F);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
 #recieveLocal{
     display: flex;
     flex-direction: column;
@@ -11,7 +22,7 @@
 
 #divTeste {
         border-radius:  8px;
-        background-image: radial-gradient(closest-side,#422F9C, #723172);
+        background-image: url(./images/Home/MarketsTypes/fundo.webp);
         width: 80%;
         height: 500px;
         margin-left: 12%;
